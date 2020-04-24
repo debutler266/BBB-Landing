@@ -101,15 +101,25 @@ img {
 /* Section 2 content.. we used inner to define content in html */
 .section-2-inner {
   color: #fff;
-  height: 100%;
+  height: 100%; /* 100% of the container */
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /*will now align vertically & not horizontally */
   align-items: center;
   justify-content: center;
   text-align: center;
   margin: auto;
   max-width: 860px; /* max-width acting as container bc we didn't use one for the 2nd section */
   padding: 5rem 0;
+}
+
+.section-2-inner h3 {
+  font-size: 6rem;
+  margin-top: 1rem;
+}
+
+.section-2-inner p {
+  font-size: 1.3rem;
+  margin-top: 1rem;
 }
 
 
