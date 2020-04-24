@@ -1,7 +1,7 @@
 :root {
   --primary-color: #333;
   --secondary-color: #444;
-  --overlay-color: rgba(0, 0, 0, 0.7);
+  --overlay-color: rgba(0, 0, 0, 0.7); /*overlay effects opacity (hoe see through you want pic to be with the overlay) MUST be between 0.0-1 */
 }
 
 * {
@@ -71,6 +71,8 @@ img {
   color: #555;
 }
 
+
+/* Section 1 */
 .section-1 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -80,5 +82,60 @@ img {
 }
 
 .section-1 h1 {
+  font-size: 4rem;
+  color: var(--primary-color);
+}
 
+/* Section 1 */
+.section-1 p {
+  margin: 1rem 0;
+}
+
+/* Section 2 */
+.section-2 {
+  position: relative;
+  background: url('../img/sec1.jpg') no-repeat bottom center/cover;
+  height: 600px;
+}
+
+/* Section 2 content.. we used inner to define content in html */
+.section-2-inner {
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  max-width: 860px; /* max-width acting as container bc we didn't use one for the 2nd section */
+  padding: 5rem 0;
+}
+
+
+/*Utility classes */
+
+.btn {
+  display: inline-block; /* button wont take up its' line its on */
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 30px;  /*rounded button type */
+}
+
+.btn:hover {
+  background: var(--secondary-color);
+}
+
+/*Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--overlay-color);
 }
