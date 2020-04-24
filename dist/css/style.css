@@ -40,3 +40,45 @@ img {
   overflow: hidden;
   padding: 0 2rem; /* 0 top and bottom and 2 left and white */
 }
+
+.navbar {
+  font-size: 1.2rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.navbar .container { /*makes grid displayed through container class, we want h1 & ul to be grid items. Not the conatiner to display as gris item. */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.navbar .logo {
+  font-size: 2rem;
+}
+
+.navbar .nav {
+  justify-self: flex end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .nav a {
+  padding: 0 1rem;
+}
+
+.navbar .nav a:hover {
+  color: #555;
+}
+
+.section-1 .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid grid-gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-1 h1 {
+
+}
