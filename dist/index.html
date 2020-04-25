@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <script src="https://kit.fontawesome.com/abb7dd614d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/simple-lightbox.min.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/simple-lightbox.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>BBB We Make Our Own Waves here</title>
   </head>
   <body>
@@ -37,7 +37,7 @@
   <div class="overlay">
     <div class="section-2-inner">
       <h3>Brilliant Bold Beautiful</h3>
-      <h2>These aren't just "clothes"</h2>
+      <h2>These aren't just clothes</h2>
       <p>Ad orci metus massa felis vehicula odio nam mauris at. Eu odio interdum dis est nunc litora amet curabitur inceptos.</p>
       </div>
     </div>
@@ -53,16 +53,21 @@
       <a href="img/gal5.jpg" class="big"><img src='img/gal5.jpg' alt=''/></a>
       <a href="img/gal6.jpg" class="big"><img src='img/gal6.jpg' alt=''/></a>
     </div>
+</section>
 
-  </section>
 
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js">
+  </script>
     <script src="js/simple-lightbox.min.js"></script>
-    <script>
-      $(function() {
-        const $gallery = $('.$gallery a').simpleLightbox();
-      });
-    </script>
+     <script>
+      var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
+  </script>"
+
   </body>
 </html>
+<!-- <script>
+ $(function() {
+  const $gallery = $('.gallery a').simpleLightbox();
+});
+</script> -->
